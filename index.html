@@ -12,8 +12,6 @@
         font-family: Arial, sans-serif;
         font-size: 16px;
         line-height: 1.6;
-        margin: 10px;
-        padding: 10px;
         background-color: transparent;
         height: 70vh;
       }
@@ -82,21 +80,19 @@
       }
 
       .content {
-        max-width: 600px;
+        max-width: 100%;
         margin: 0 auto;
-        padding: 40px;
-        opacity: 0.4;
-        background-color: #fff;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        border-radius: 8px;
+        height: 100%;
+        opacity: 1;
+        color:white;
         position: relative;
+        border-radius: 40px;
         top: 50%;
         transform: translateY(-50%);
         backdrop-filter: blur(
-          10px
+          50px
         ); /* Add backdrop-filter property to blur the background */
         text-align: left; /* Align the content to the left */
-        background-color: #fff; /* Set the initial background color (fallback) */
         mix-blend-mode: difference; /* Apply the difference blend mode */
       }
 
@@ -141,7 +137,7 @@
           font-size: 48px;
         }
       }
-        
+
       @media screen and (max-width: 480px) {
         .huge-font {
           font-size: 36px;
@@ -181,8 +177,12 @@
         gyroControls: false,
         minHeight: 200.0,
         minWidth: 200.0,
-        baseColor: 0xffffff,
+        baseColor: 0x0,
         backgroundColor: 0x0,
+        amplitudeFactor: 3.0,
+        xOffset: 0.32,
+        yOffset: 0.35,
+        size: 2.4,
       });
     </script>
   </body>
